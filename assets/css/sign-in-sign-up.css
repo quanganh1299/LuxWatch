@@ -1,0 +1,664 @@
+html {
+    -webkit-transition: all 2s ease-in-out; 
+    transition: all 2s;
+    overflow-x: hidden;
+}
+
+#form {
+    margin: 0 auto;
+    text-align: center;
+    width: 440px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+#form .logo {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 20px auto 23px;
+}
+
+#form .infor-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#form .social-login {
+    margin: 10px auto;
+}
+
+#form .google-icon{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 3px;
+    margin-right: 8px;
+}
+
+#form .fb-icon {
+    width: 48px;
+    height: 48px;
+}
+
+#form .or-text {
+    width: 200px; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 15px auto 20px; 
+    font-size: 12px;
+    font-weight: bold;
+ } 
+ 
+ #form .or-text span { 
+     background:#fff; 
+     padding: 0 10px; 
+     width: 33.33333%;
+ }
+
+ #form label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+ }
+
+#form input:focus {
+    outline: none;
+}
+
+ #form #fname, 
+ #form .password-hide-show,
+ #form #fcontact {
+    width: 435px;
+    height: 43px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding-left: 40px;
+    padding-top: 2px;
+ }
+
+ #form .user-icon, 
+ #form .password-icon,
+ #form .chat-icon  {
+    position: relative; 
+    color: #252775; 
+    float: left;
+    margin-left: 15px;
+    margin-top: -30px;
+ }
+
+ #form .eye-icon {
+    position: relative;
+    float: right;
+    color: #252775; 
+    margin-right: 15px;
+    margin-top: -30px;
+    cursor: pointer;
+ }
+
+ #form .input-password, #form .input-email-phone {
+    margin-top: 16px;
+ }
+
+ #form .support-text {
+    font-size: 10px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: right;
+ }
+
+ #form .support-text i {
+    color: #252775;
+    cursor: pointer;
+ }
+
+ #form .support-text a {
+    font-weight: bold;
+ }
+
+ #form .support-text a:visited {
+    color: #252775;
+ }
+
+#form .button{
+    color: #fff;
+    width: 435px;
+    padding: 0;
+    background-color: #252775;
+    display: block;
+    width: 435px;
+    padding: 14px 0;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+ }
+
+ #footer{
+    width: 100%;
+    margin-top: 10px;
+ }
+
+.footer-divide {
+    background-color: #252775;
+    height: 3px;
+    border: 0;
+    width: 300%;
+    margin-left: -20%;
+    margin-top: 35px;
+}
+
+ #footer .title-footer{
+    padding-left: 85px;
+    padding-top: 15px;
+    margin-bottom: 35px;
+ }
+
+ #footer .content-footer {
+    padding-right: 15px;
+    padding-top: 40px;
+    padding-left: 80px;
+    margin-bottom: 35px;
+ }
+
+ #footer .title-logo img {
+    width: 90px;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+#footer span {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #252775; 
+}
+
+#footer a {
+    text-decoration: none;
+    color: #252775;
+}
+
+#footer li {
+    list-style-type: none;
+    margin-top: 20px;
+    color: #252775;
+}
+
+#footer .title-content-footer{
+    font-size: 14px;
+}
+
+#footer .title-footer-icon{
+    font-size: 32px;
+    margin-right: 32px;
+}
+
+#footer .header-content-footer{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: #252775;
+}
+
+#footer .content-footer img{
+        width: 35px;
+        margin-right: 10px;
+}
+
+#footer .content-footer .product{
+    padding-left: 65px;
+}
+
+#footer .content-footer .help {
+    padding-left: 50px;
+}
+
+#footer .content-footer .transport {
+    margin-left: -25px;
+}
+
+#footer .content-footer .pay {
+    margin-left: 20px;
+}
+
+/* Responsive PC standard size */
+@media (min-width: 1200px) and (max-width: 1389px){
+    #footer .title-footer {
+        padding-left: 80px;
+    }
+
+    #footer .title-content-footer {
+        font-size: 12px;
+    }
+
+    #footer span {
+        font-size: 25px;
+    }
+
+    #footer .content-footer {
+        padding-right: 25px;
+        padding-left: 60px;
+    }
+
+    #footer .header-content-footer {
+        font-size: 14px;
+    }
+
+    #footer .title-footer-icon {
+        font-size: 25px;
+    }    
+
+    #footer li {
+        font-size: 13px;
+    }
+
+    #footer .content-footer .help {
+        padding-left: 40px;
+    }
+}
+
+/* Responsive lower resolution PC and large tablet */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .footer-divide {
+        height: 2px;
+        margin-top: 425px;
+    }
+    
+    #footer {
+        margin-left: -20px;
+        width: 104.5%;
+    }
+    
+    #footer .title-footer {
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    
+    #footer .title-logo img {
+        width: 60px;
+    }
+    
+    #footer span {
+        font-size: 20px;
+    }
+    
+    #footer .title-content-footer {
+        font-size: 11px;
+    }
+    
+    #footer .title-footer-icon {
+        font-size: 25px;
+    }
+    
+    #footer .header-content-footer {
+        font-size: 11px;
+    }
+    
+    #footer li {
+        font-size: 10px;
+    }
+    
+    #footer .content-footer {
+        padding-right: 0px;
+        padding-top: 25px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #footer .content-footer img {
+        width: 30px;
+    }
+    
+    #footer .content-footer .product {
+        padding-left: 50px;
+    }
+    
+    #footer .content-footer .help {
+        padding-left: 35px;
+    }
+    
+    #footer .content-footer .pay {
+        margin-left: 10px;
+    }
+    
+    #footer .content-footer .transport {
+        margin-left: -20px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
+    .footer-divide {
+        height: 2px;
+        margin-top: 100px;
+    }
+    
+    #footer {
+        margin-left: -52px;
+        width: 120%;
+    }
+    
+    #footer .title-footer {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 5px;
+    }
+    
+    #footer .title-logo img {
+        width: 50px;
+    }
+    
+    #footer span {
+        font-size: 20px;
+    }
+    
+    #footer .title-content-footer {
+        font-size: 9.5px;
+    }
+    
+    #footer .title-footer-icon {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    
+    #footer .header-content-footer {
+        font-size: 10px;
+    }
+    
+    #footer li {
+        font-size: 10px;
+    }
+    
+    #footer .content-footer {
+        padding-right: 0px;
+        padding-top: 25px;
+        padding-left: 25px;
+        margin-bottom: 30px;
+    }
+    
+    #footer .content-footer img {
+        width: 25px;
+    }
+    
+    #footer .content-footer .product {
+        padding-left: 30px;
+    }
+    
+    #footer .content-footer .help {
+        padding-left: 15px;
+    }
+
+    #footer .content-footer .support {
+        padding: 0;
+    }
+
+    #footer .content-footer .transport {
+        padding: 0;
+        margin-left: -23px;
+    }
+
+    #footer .content-footer .pay {
+        padding: 0;
+        margin-left: 10px;
+    }
+}
+
+
+ @media (max-width: 740px) {
+    #form {
+        max-width: 340px;
+        height: auto;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    #form .logo {
+        width: 50px;
+        height: 53.2px;
+    }
+    #form .infor-text {
+        font-size: 12px;
+    }
+
+    #form .social-login {
+        margin: 10px auto;
+    }
+
+    #form .google-icon{
+        width: 30px;
+        height: 30px;
+    }
+
+    #form .fb-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    #form .or-text {
+        font-size: 8px;
+    }
+
+    #form label {
+        margin-bottom: 5px;
+        margin-left: 22px;
+        font-size: 10px;
+     }
+
+    #form #fname, 
+    #form .password-hide-show,
+    #form #fcontact {
+        width: 300px;
+        height: 40px;
+        padding-left: 40px;
+        padding-top: 2px;
+     }
+
+     #form .user-icon, 
+     #form .password-icon,
+     #form .chat-icon  {
+        font-size: 10px;
+        margin-left: -284px;
+        margin-top: 16px;
+        position: absolute;
+     }
+
+     #form .support-text {
+        margin-right: 20px;
+     }
+
+     #form .button{
+        width: 300px;
+        margin-left: 20px;
+        font-size: 12px;
+     }
+
+     #form .eye-icon {
+        position: absolute;
+        font-size: 10px;
+        margin-left: -25px;
+        margin-top: 17px;
+     }
+}
+
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal.hide {
+    display: none;
+}
+
+.modal-container {
+    background: #fff;
+    border-radius: 5px;
+    width: 500px;
+    max-width: calc(100% - 32px);
+    min-height: 500px;
+    animation: modalFadeIn ease .6s;
+    position: absolute;
+    display: table;
+}
+
+.modal-heading-icon {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 16px;
+    text-align: center;
+    margin-top: 25%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-body .modal-main-infor {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.modal-body .modal-extra-infor {
+    font-size: 15px;
+    color: #000;
+    opacity: 50%;
+}
+
+@keyframes  modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#modal .modal-main-infor {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+#modal .modal-extra-infor{
+    margin-top: 20px;
+}
+
+#modal  label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+ }
+
+ #modal input:focus {
+    outline: none;
+}
+
+ #modal #fname-modal, 
+ #modal .password-hide-show,
+ #modal #fcontact {
+    width: 435px;
+    height: 43px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding-left: 40px;
+    padding-top: 2px;
+ }
+
+#modal .password-icon,
+#modal .chat-icon  {
+    position: relative; 
+    color: #252775; 
+    float: left;
+    margin-left: 30px;
+    margin-top: -30px;
+ }
+
+ #modal .eye-icon {
+    position: relative;
+    float: right;
+    color: #252775; 
+    margin-right: 30px;
+    margin-top: -30px;
+    cursor: pointer;
+ }
+
+ #modal .input-password {
+    display: none;
+    margin-bottom: 15px;
+ }
+
+ #modal .input-email-phone {
+    display: block;
+ }
+
+ #modal button {
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 15px;
+    width: 210px;
+    background: #252775;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+
+ #modal #third-modal {
+    display: none;
+ }
+
+ #modal #signin-modal-btn {
+    width: 437px;
+    display: none;
+    margin-left: 16px;
+ }

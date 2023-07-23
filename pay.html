@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="icon" href="./assets/favicon/Logo âm bản.png">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-pay.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+<body>
+    <div class="grid wide">
+        <!-- Begin: Header -->
+        <div id="header" class="row">
+            <div class="col l-1 m-1">
+                <!-- Logo -->
+                <img src="./assets/img/describe-product/Logo.svg" alt="logo" class="logo">
+            </div>
+                <!-- Begin: nav -->
+            <div class="col l-7 m-7">
+                <ul id="nav">
+                    <li><a href="./index.html">TRANG CHỦ</a></li>
+                    <li><a href="./male-product.html">ĐỒNG HỒ NAM</a></li>
+                    <li><a href="./female-product.html">ĐỒNG HỒ NỮ</a></li>
+                    <li><a href="#/">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="#/">TRỢ GIÚP</a></li>
+                    </li>
+                </ul>
+            </div>
+                <!-- End: nav -->
+            <div class="col l-4 m-4">
+                <!-- Input search -->
+                <input type="text" class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping shopping-icon">
+                        <span class='badge' id='lblCartCount'>3</span>
+                    </i>
+                </a>
+                <i class="fa-solid fa-circle-user user-icon"></i>
+            </div>
+        </div>
+        <!-- End: Header -->
+
+         <!-- Slider -->
+         <div id="banner" class="row">
+            <div class="col l-12 banner">
+                <img src="./assets/img/male-product/banner.png" alt="banner">
+            </div>
+        </div>
+        <!-- End: Slider -->
+
+        <!-- Bread Crumb -->
+        <div id="bread-crumb" class="row">
+            <div class="col l-12">
+                <i class="fa-solid fa-house bread-crumb-icon"></i>
+                <span class="bread-crumb-content">Trang chủ >> Thanh toán</span>
+            </div>
+        </div>
+        <!-- End: Bread Crumb -->
+
+        <!-- Begin: Content -->
+        <div class="row" id="content">
+            <div class="col l-6">
+                <div class="row">
+                    <div class="col l-12 header-infor">
+                        Thông tin nhận hàng
+                    </div>
+                </div>
+                <div class="row infor-detail">
+                    <div class="col l-3 title-infor">Họ tên: </div>
+                    <div class="col l-9 infor">Anh Phượng</div>
+                </div>
+                <div class="row infor-detail">
+                    <div class="col l-3 title-infor">Số điện thoại: </div>
+                    <div class="col l-9 infor">(+84)9901968799</div>
+                </div>
+                <div class="row infor-detail">
+                    <div class="col l-3 title-infor">Địa chỉ: </div>
+                    <div class="col l-9 infor">96 Định Công, Hoàng Mai, Hà Nội</div>
+                </div>
+            </div>
+            <div class="col l-6 change-infor">
+                <span class="italic-text">Mặc định</span>
+                <span>Thay đổi</span>
+            </div>
+        </div>
+
+        <div class="row" id="table">
+            <div class="col l-12 m-12 c-12 product-table">
+                <table>
+                    <tr class="table-header">
+                        <td>Sản phẩm</td>
+                        <td>Đơn giá</td>
+                        <td class="amount">Số lượng</td>
+                        <td>Tổng tiền</td>
+                    </tr>
+                    <tr>
+                        <td class="product">
+                            <img src="./assets/img/pay/product-1.png" alt="Đồng hồ nữ G-Shock">
+                            <p>G-Shock Nữ GM-S2100PG</p>
+                        </td>
+                        <td class="price">8.000.000 vnd</td>
+                        <td>
+                            <div class="row increase-decrease-button">
+                                <div class="col l-12">
+                                    <form>
+                                        <div class="value-button decrease" onclick="decreaseFirstValue()" value="Decrease Value">-</div>
+                                        <input type="number" class="number" id="first-number" value="1" />
+                                        <div class="value-button increase" onclick="increaseFirstValue()" value="Increase Value">+</div>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="total">8.000.000 vnd</td>
+                    </tr>
+                    <tr>
+                        <td class="product">
+                            <img src="./assets/img/pay/product-2.png" alt="Đồng hồ nữ G-Shock">
+                            <p>G-Shock Nam GW-A1100</p>
+                        </td>
+                        <td class="price">18.000.000 vnd</td>
+                        <td>
+                            <div class="row increase-decrease-button">
+                                <div class="col l-12">
+                                    <form>
+                                        <div class="value-button decrease" onclick="decreaseSecondValue()" value="Decrease Value">-</div>
+                                        <input type="number" class="number" id="second-number" value="2" />
+                                        <div class="value-button increase" onclick="increaseSecondValue()" value="Increase Value">+</div>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="total">36.000.000 vnd</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Payment Information -->
+        <div class="row payment-information">
+            <div class="col l-6 m-6">
+                <p class="heading-payment-information">Phương thức thanh toán</p>
+                <label class="container">Thanh toán bằng ví điện tử Zalo Pay
+                    <input type="checkbox" id="zalo-pay">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Thanh toán bằng ví điện tử Momo
+                    <input type="checkbox" id="momo-pay">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Thanh toán qua tài khoản ngân hàng
+                    <input type="checkbox" id="bank-pay">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Thanh toán khi nhận hàng
+                    <input type="checkbox" id="order-pay">
+                    <span class="checkmark"></span>
+                </label>
+                <p class="commit">Nhấn <i>"Đặt Hàng"</i> đồng nghĩa với việc bạn tuân thủ điều khoản của Lux Watch</p>
+            </div>
+            <div class="col l-6 m-6">
+                <div class="row" id="product-price-infor">
+                    <div class="col l-8 m-6 right">
+                        <p>Tiền hàng: </p>
+                        <p>Phí vận chuyển: </p>
+                        <p>Tổng cộng: </p>
+                    </div>
+                    <div class="col l-4 m-6 left">
+                        <p>44.000.000 vnd</p>
+                        <p>30.000 vnd</p>
+                        <p>44.030.000 vnd</p>
+                    </div>
+                </div>
+                <div class="row" id="button">
+                    <div class="col l-12">
+                        <a href="#/" onclick="show()">Đặt hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Payment Method -->
+
+<!-- Begin: Footer -->
+<hr class="footer-divide">
+<div class="row" id="footer">
+    <div class="col l-3 m-3 title-footer">
+        <div class="title-logo">
+            <img src="./assets/img/homepage/Logo.svg" alt="Logo">
+            <span>Lux Watch</span>
+        </div>
+        <ul>
+            <li class="title-content-footer">Địa chỉ: 96 Định Công - Thanh Xuân - Hà Nội</li>
+            <li class="title-content-footer"><a href="mailto: LuxWatch@gmail.com">Email: LuxWatch@gmail.com</a></li>
+            <li class="title-content-footer"><a href="tel:+84901735273">Số điện thoại: 0901735273</a></li>
+            <li>
+                <i class="fa-brands fa-facebook fb-icon title-footer-icon"></i>
+                <i class="fa-solid fa-envelope gmail-icon title-footer-icon"></i>
+                <i class="fa-brands fa-instagram ins-icon title-footer-icon"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="col l-9 m-9 content-footer">
+        <div class="row">
+            <div class="col l-2-4 m-2-4 support">
+                <p class="header-content-footer">Hỗ trợ khách hàng</p>
+                <ul>
+                    <li><a href="#/">Chính sách bảo hành</a></li>
+                    <li><a href="#/">Chính sách vận chuyển</a></li>
+                    <li><a href="#/">Chính sách đổi trả</a></li>
+                    <li><a href="#/">Chính sách thanh toán</a></li>
+                    <li><a href="#/">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="col l-2-4 m-2-4 product">
+                <p class="header-content-footer">Sản phẩm</p>
+                <ul>
+                    <li><a href="./male-product.html">Đồng hồ nam</a></li>
+                    <li><a href="./female-product.html">Đồng hồ nữ</a></li>
+                </ul>
+            </div>
+            <div class="col l-2-4 m-2-4 help">
+                <p class="header-content-footer">Trợ giúp</p>
+                <ul>
+                    <li><a href="#/">FAQ</a></li>
+                    <li><a href="#/">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col l-2-4 m-2-4 transport">
+                <p class="header-content-footer">Đơn vị vận chuyển</p>
+                <ul>
+                    <li>
+                        <img src="./assets/img/footer/GHN.png" alt="ghn">
+                        <img src="./assets/img/footer/Viettel post.png" alt="viettel">
+                        <img src="./assets/img/footer/VietnamPost.png" alt="vietnampost">
+                    </li>
+                    <li>
+                        <img src="./assets/img/footer/J&T express.png" alt="J&T">
+                        <img src="./assets/img/footer/Grabexpress.png" alt="Grabexpress">
+                        <img src="./assets/img/footer/ninjavan.png" alt="ninjavan">
+                    </li>
+                    <li>
+                        <img src="./assets/img/footer/giaohangnhanh.png" alt="giaohangnhanh">
+                    </li>
+                </ul>
+            </div>
+            <div class="col l-2-4 m-2-4 pay">
+                <p class="header-content-footer">Thanh toán</p>
+                <ul>
+                    <li>
+                        <img src="./assets/img/footer/Visa.png" alt="visa">
+                        <img src="./assets/img/footer/american express.png" alt="american-express">
+                        <img src="./assets/img/footer/master-card.png" alt="mastercard">
+                    </li>
+                    <li>
+                        <img src="./assets/img/footer/jcb.png" alt="JCB">
+                        <img src="./assets/img/footer/Momo.png" alt="momo">
+                        <img src="./assets/img/footer/zalo-icon.png" alt="zalo">
+                    </li>
+                    <li>
+                        <img src="./assets/img/footer/tragop0.png" alt="tra-gop">
+                        <img src="./assets/img/footer/cod-icon.png" alt="cod">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- End: Footer -->
+
+    <!-- Modal -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/pay/V-vector.svg" alt="Finish icon" id="modal-icon">
+                <p class="modal-main-infor" id="modal-infor">Đặt hàng thành công!</p>
+                <p class="modal-extra-infor" id="modal-extra-infor">Cảm ơn bạn đã mua hàng tại Lux Watch</p>
+                <p class="modal-extra-alert" id="modal-extra-alert">
+                    Vui lòng chờ thông tin xác nhận trong vòng 30 phút<br>
+                    Thông tin xác nhận sẽ được gửi qua email/số điện thoại của bạn
+                </p>
+                <a href="./index.html" id="buy-button">Tiếp tục mua sắm</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/pay.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="icon" href="./assets/favicon/Logo âm bản.png">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/sign-in-sign-up.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+<body>
+    <div class="grid wide">
+        <div class="row">
+            <form id="form">
+                <h1>ĐĂNG KÝ</h1>
+                <img src="./assets/img/sign-in/Logo.svg" alt="Logo" class="logo">
+                <p class="infor-text">Đăng kí với</p>
+                <div class="social-login">
+                    <a href="index.html"><img src="./assets/img/sign-in/google.svg" alt="google login" class="google-icon"></a>
+                    <a href="index.html"><img src="./assets/img/sign-in/fb-icon.svg" alt="fb login" class="fb-icon"></a>
+                </div>
+                <p class="or-text"><span>Hoặc</span></p>
+
+                <div class="input-user">
+                    <label for="fname">Tên đăng nhập</label>
+                    <input type="text" id="fname" name="name" placeholder="Mời bạn nhập tên đăng nhập">
+                    <i class="fa-solid fa-user user-icon"></i>
+                </div>
+
+                <div class="input-email-phone">
+                    <label for="fcontact">Email/Số điện thoại</label>
+                    <input type="text" id="fcontact" name="password" placeholder="Mời bạn nhập email/số điện thoại">
+                    <i class="fa-solid fa-comment-dots chat-icon"></i>
+                </div>
+
+                <div class="input-password">
+                    <label for="fpassword-first">Mật khẩu</label>
+                    <input type="password" id="fpassword-first" class="password-hide-show" name="password" placeholder="Mời bạn nhập mật khẩu">
+                    <i class="fa-solid fa-lock password-icon"></i>
+                    <i class="fa-solid fa-eye eye-icon"  id="password-first"></i>
+                </div>
+
+                <div class="input-password">
+                    <label for="fpassword">Nhập lại mật khẩu</label>
+                    <input type="password" id="fpassword-second" class="password-hide-show" name="password" placeholder="Mời bạn nhập lại mật khẩu">
+                    <i class="fa-solid fa-lock password-icon"></i>
+                    <i class="fa-solid fa-eye eye-icon"  id="password-second"></i>
+                </div>
+                <a onclick="show()" href="#/" class="button">Đăng ký</a>
+                <p class="support-text">Bạn đã có tài khoản? <a href="./sign-in.html">Đăng nhập ngay</a></p>
+            </form>
+        </div>
+        <!-- Begin: Footer -->
+        <hr class="footer-divide">
+        <div class="row" id="footer">
+            <div class="col l-3 m-3 title-footer">
+                <div class="title-logo">
+                    <img src="./assets/img/homepage/Logo.svg" alt="Logo">
+                    <span>Lux Watch</span>
+                </div>
+                <ul>
+                    <li class="title-content-footer">Địa chỉ: 96 Định Công - Thanh Xuân - Hà Nội</li>
+                    <li class="title-content-footer"><a href="mailto: LuxWatch@gmail.com">Email: LuxWatch@gmail.com</a></li>
+                    <li class="title-content-footer"><a href="tel:+84901735273">Số điện thoại: 0901735273</a></li>
+                    <li>
+                        <i class="fa-brands fa-facebook fb-icon title-footer-icon"></i>
+                        <i class="fa-solid fa-envelope gmail-icon title-footer-icon"></i>
+                        <i class="fa-brands fa-instagram ins-icon title-footer-icon"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l-9 m-9 content-footer">
+                <div class="row">
+                    <div class="col l-2-4 m-2-4 support">
+                        <p class="header-content-footer">Hỗ trợ khách hàng</p>
+                        <ul>
+                            <li><a href="#/">Chính sách bảo hành</a></li>
+                            <li><a href="#/">Chính sách vận chuyển</a></li>
+                            <li><a href="#/">Chính sách đổi trả</a></li>
+                            <li><a href="#/">Chính sách thanh toán</a></li>
+                            <li><a href="#/">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-2-4 product">
+                        <p class="header-content-footer">Sản phẩm</p>
+                        <ul>
+                            <li><a href="./male-product.html">Đồng hồ nam</a></li>
+                            <li><a href="./female-product.html">Đồng hồ nữ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-2-4 help">
+                        <p class="header-content-footer">Trợ giúp</p>
+                        <ul>
+                            <li><a href="#/">FAQ</a></li>
+                            <li><a href="#/">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-2-4 transport">
+                        <p class="header-content-footer">Đơn vị vận chuyển</p>
+                        <ul>
+                            <li>
+                                <img src="./assets/img/footer/GHN.png" alt="ghn">
+                                <img src="./assets/img/footer/Viettel post.png" alt="viettel">
+                                <img src="./assets/img/footer/VietnamPost.png" alt="vietnampost">
+                            </li>
+                            <li>
+                                <img src="./assets/img/footer/J&T express.png" alt="J&T">
+                                <img src="./assets/img/footer/Grabexpress.png" alt="Grabexpress">
+                                <img src="./assets/img/footer/ninjavan.png" alt="ninjavan">
+                            </li>
+                            <li>
+                                <img src="./assets/img/footer/giaohangnhanh.png" alt="giaohangnhanh">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-2-4 pay">
+                        <p class="header-content-footer">Thanh toán</p>
+                        <ul>
+                            <li>
+                                <img src="./assets/img/footer/Visa.png" alt="visa">
+                                <img src="./assets/img/footer/american express.png" alt="american-express">
+                                <img src="./assets/img/footer/master-card.png" alt="mastercard">
+                            </li>
+                            <li>
+                                <img src="./assets/img/footer/jcb.png" alt="JCB">
+                                <img src="./assets/img/footer/Momo.png" alt="momo">
+                                <img src="./assets/img/footer/zalo-icon.png" alt="zalo">
+                            </li>
+                            <li>
+                                <img src="./assets/img/footer/tragop0.png" alt="tra-gop">
+                                <img src="./assets/img/footer/cod-icon.png" alt="cod">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- End: Footer -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-body">
+                <img src="./assets/img/sign-in/V-vector.svg" alt="Finish icon">
+                <p class="modal-main-infor">Đăng kí thành công</p>
+                <p class="modal-extra-infor">Bạn vui lòng truy cập email hoặc điện thoại để kích hoạt tài khoản</p>
+                <!-- <button id="buy-tickets">
+                    Pay
+                    <i class="fa-solid fa-check"></i>
+                </button> -->
+            </div>
+        </div>
+    </div>
+<script src="./assets/js/signUpIn.js"></script>
+</body>
+</html>
